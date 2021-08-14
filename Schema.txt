@@ -1,0 +1,19 @@
+users
+id UNIQUE INTEGER
+name CHAR(255)
+username UNIQUE CHAR(255)
+password CHAR(255)
+created_at TIMESTAMP
+
+likes
+id UNIQUE INTEGER
+tweet_id INTEGER
+user_id INTEGER
+created_at TIMESTAMP
+
+tweets
+id UNIQUE INTEGER
+user_id CHAR(255)
+par_tweet_id INTEGER
+message CHAR(280)
+created_at TIMESTAMP
